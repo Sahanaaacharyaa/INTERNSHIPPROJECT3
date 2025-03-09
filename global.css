@@ -142,7 +142,7 @@ body {
     height: 100%;
     align-items: center;
     
-   
+    display: flex;
     
     text-align: center;
     font-family: 'Lobster', cursive; 
@@ -152,10 +152,13 @@ body {
     
    
   }
+  .abhead h2{
+    margin-left: 30%;
+  }
   .abbody{
    
  
-    width: 50%;
+    width: 70%;
     height: 100%;
   
     align-items: center;
@@ -839,6 +842,9 @@ margin-top: 10px;
   
  
 }
+.abhead h2{
+  margin-left: 20px;
+}
 .abbody{
  
 
@@ -851,7 +857,7 @@ margin-top: 10px;
 
 }
 .abbody p{
- height: 180px;
+ height: 280px;
   width:130px;
  text-align: justify;
   display: flex;

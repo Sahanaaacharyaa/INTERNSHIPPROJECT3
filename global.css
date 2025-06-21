@@ -1,5 +1,5 @@
 body {
-    font-family:'Times New Roman', Times, serif; 
+    font-family:Arial, Helvetica, sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     height: 60px;
     width: 100%;
     top: 0;
-   
+   overflow: hidden;
     color: #fffffe;
     text-shadow: 0 0 10px white,;
   }
@@ -44,25 +44,14 @@ body {
     padding: 8px 10px;
     height: 20px;
     width: 20px;
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 10px white;
     
   }
   
   /* Shimmer Effect on Navbar Links */
-  .navbar ul li a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-   
-  }
+
   
-  .navbar ul li a:hover::before {
-    opacity: 0.8;
-  }
+
   
   .navbar ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -101,30 +90,47 @@ body {
     font-size: 2.5rem;
     font-weight: bold;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration:2px rgb(255, 255, 255) underline;
   }
  .cert-img{
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
- 
-   
-}
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
 #certifications img{
     height:180px;
     width: 280px;
     border: 1px solid rgb(228, 228, 228);
-  
+   
     
+    display:inline-block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin:0 auto;
+  
   
 }
 .div13{
-  margin: 5%;
+ 
+  display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  margin: 2%;
+  width: 300px;
+  height: 250px;
+
+  padding: 1%;
 }
 #certifications p{
   color: white;
-  
-  padding-left: 5%;
+ text-align: center;
+ 
 
 }
 #certifications ul{
@@ -133,7 +139,7 @@ body {
 }
 #certifications li{
 
-     padding: 3%;
+     padding: 2%;
     
 }
   .home h2 {
@@ -150,7 +156,7 @@ body {
     z-index:5;
     text-decoration:2px rgb(121, 117, 117) underline;
     text-shadow: 0 0 20px rgb(5, 2, 8);
-    background: linear-gradient(90deg, transparent, #cecdcd, transparent);
+    background: linear-gradient(90deg, transparent, #4d4a4a, transparent);
     animation: shimmer 5s 1 ;
    
     
@@ -195,21 +201,23 @@ body {
   color: #d3cfcb;
 }
 #about h2{
-  color: white;
-  height: 50px;
+  color:black;
+  height: 40px;
   display: inline-block;
   align-items: center;
+  background-color: white;
 padding-top: 5%;
   justify-content: center;
   text-align: center;
-  border: 3px solid white;
+  
+  border: 5px solid rgb(0, 0, 0);
   width: 200px;
-  border-radius: 2%;
+  border-radius: 5%;
 }
 h1, h2 {
     color: #000000;
     margin-bottom: 10px;
-    text-shadow: 0 0 10px rgb(78, 82, 78);
+    
     text-align: center;
 }
 
@@ -236,6 +244,23 @@ h1, h2 {
       transform: translateY(0);
     }
   }
+  #publications{
+    text-align: center;
+   
+    background: linear-gradient(90deg,rgb(39, 39, 39), #252525, rgb(8, 8, 8));
+    color: white;
+  }
+  #publications h1{
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: 2px white underline;
+  }
+  .pubdiv{
+    margin: 3%;
+
+  }
+  
   .mlprojects{
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +279,12 @@ h1, h2 {
     text-align: center;
     justify-content: center;
     margin:0 auto;
+    border: 1px solid white;
     
+  }
+  .mlprojects p{
+    text-align: justify;
+    margin: 4%;
   }
   .ml1{
     display: block;
@@ -263,10 +293,10 @@ h1, h2 {
     margin: 2%;
     padding:2%;
     min-height: 400px;
-    max-height: 700px;
-    width: 500px;
+    height: 500px;
+    width: 300px;
     text-align: center;
-    border: 1px solid white;
+    border: 3px solid white;
   }
   .projecthead{
     height: 10%;
@@ -415,7 +445,7 @@ margin-top: 10px;
 }
 .skillsection {
   text-align: center;
-  height: 500px;
+
   width: 100%;
   align-items: center;
   display: flex;
@@ -723,7 +753,7 @@ footer{
     height: 20px;
     width: 30px;
     margin: 2px;
-    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 5px white;
     font-size: xx-small;
     transition: all 0.3s ease-in-out;
   }
@@ -745,12 +775,16 @@ justify-content: center;
   
     
   }
-  
  
-  
+ #home{
+  height: 250px;
+ }
+  #home h2{
+    font-size:30px;
+  }
 
  .projects h2{
-  font-size: 30px;
+  font-size: 1.5rem;
  }
   
  .project-tree{
@@ -1003,5 +1037,19 @@ margin-left: 5px;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
     
 }
-
+.skills-title h1{
+  font-size: 1.5rem;
+}
+#publications h1{
+  font-size: 1.5rem;
+}
+.services h2{
+  font-size: 1.5rem;
+}
+#certifications h1{
+  font-size: 1.5rem;
+}
+#contact h2{
+  font-size: 1.5rem;
+}
 }

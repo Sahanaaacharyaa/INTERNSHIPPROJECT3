@@ -17,22 +17,10 @@ body {
   }
   header{
     background: linear-gradient(90deg,rgb(39, 39, 39), #252525, rgb(8, 8, 8));
-    padding: 1%;
+   
   }
  
-  header img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    display:block;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin:auto;
-   
-    box-shadow: 0 0 5px rgb(133, 131, 131);
-  }
+
   .navbar {
     display: flex;
     position: relative;
@@ -89,8 +77,9 @@ body {
     }
   }
   .home{
-    height:300px;
-    
+    margin: auto;
+    padding-top: 5%;
+    height:200px;
     text-align: center;
     background: linear-gradient(90deg,rgb(39, 39, 39), #252525, rgb(8, 8, 8));
     overflow: hidden;
@@ -163,12 +152,11 @@ body {
   
     font-size: 3rem;
     width: 100%;
-   
-    
+
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     color:white;
-   margin: 1%;
+   margin: 2%;
  
    
     text-shadow: 0 0 20px rgb(5, 2, 8);
@@ -761,13 +749,7 @@ footer{
   header{
     padding: 4%;
   }
-  header img{
-    height: 80px;
-    width: 80px;
-    margin: auto;
-    
-   
-  }
+ 
   .navbar ul li a {
     background-color: #dfd7bd;
     color: rgb(0, 0, 0);
@@ -800,7 +782,8 @@ justify-content: center;
   }
  
  #home{
-  height: 200px;
+  height: 100px;
+  padding-top: 5%;
  }
   #home h2{
     font-size:30px;

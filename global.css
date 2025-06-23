@@ -15,6 +15,24 @@ body {
     justify-content: space-evenly;
     align-items: center;
   }
+  header{
+    background: linear-gradient(90deg,rgb(39, 39, 39), #252525, rgb(8, 8, 8));
+    padding: 1%;
+  }
+ 
+  header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display:block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+   
+    box-shadow: 0 0 5px rgb(133, 131, 131);
+  }
   .navbar {
     display: flex;
     position: relative;
@@ -72,9 +90,7 @@ body {
   }
   .home{
     height:300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     text-align: center;
     background: linear-gradient(90deg,rgb(39, 39, 39), #252525, rgb(8, 8, 8));
     overflow: hidden;
@@ -143,8 +159,8 @@ body {
     
 }
   .home h2 {
-    position: relative;
-    right:0%;
+   
+  
     font-size: 3rem;
     width: 100%;
    
@@ -152,27 +168,25 @@ body {
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     color:white;
-    transition: transform 0.5s ease-in-out;
-    z-index:5;
-    text-decoration:2px rgb(121, 117, 117) underline;
+   margin: 1%;
+ 
+   
     text-shadow: 0 0 20px rgb(5, 2, 8);
     background: linear-gradient(90deg, transparent, #4d4a4a, transparent);
-    animation: shimmer 5s 1 ;
-   
+
     
   }
   
   .home p {
-    position: absolute;
-    left: 0%;
+  
     
     font-size: 10px;
     text-align: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    z-index:5;
+  
     background: linear-gradient(30deg, transparent, #fcf8f8, transparent);
-    transition: transform 0.5s ease-in-out;
+   
   }
   #about{
     display: flex;
@@ -744,7 +758,16 @@ footer{
     justify-content: space-evenly;
     align-items: center;
   }
-  
+  header{
+    padding: 4%;
+  }
+  header img{
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    
+   
+  }
   .navbar ul li a {
     background-color: #dfd7bd;
     color: rgb(0, 0, 0);
@@ -777,7 +800,7 @@ justify-content: center;
   }
  
  #home{
-  height: 250px;
+  height: 200px;
  }
   #home h2{
     font-size:30px;

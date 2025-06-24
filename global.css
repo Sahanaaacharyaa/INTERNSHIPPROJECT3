@@ -190,12 +190,14 @@ body {
 .div11{
   margin:3%;
   display: block;
-  border:1px solid white;
+ border-radius: 5%;
+  background-color: #d8d3d318;
   padding: 2%;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  box-shadow: 0 0 30px black;
   
   
 }
@@ -289,6 +291,7 @@ h1, h2 {
     margin: 4%;
   }
   .ml1{
+      background-color: #d8d3d315;
     display: block;
     align-items: center;
     justify-content: center;
@@ -298,7 +301,8 @@ h1, h2 {
     height: 500px;
     width: 300px;
     text-align: center;
-    border: 3px solid white;
+   border-radius: 5%;
+   box-shadow: 0 0 20px black;
   }
   .projecthead{
     height: 10%;
@@ -533,7 +537,7 @@ font-size: 2.5rem;
   color: #f1efef;
 
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(214, 212, 212, 0.918);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.918);
   width: 250px;
   height: 200px;
   display: flex;
@@ -557,7 +561,7 @@ font-size: 2.5rem;
   align-items: center;
   display: flex;
 
-  box-shadow: 0 0 10px rgba(204, 201, 201, 0.918);
+  border: 1px solid white;
 }
 
 .service p {

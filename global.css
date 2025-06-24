@@ -198,7 +198,7 @@ body {
   text-align: center;
   color: white;
   box-shadow: 0 0 30px black;
-  
+  border: 0.5px solid white;
   
 }
 .navbar h1{
